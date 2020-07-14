@@ -1829,28 +1829,3 @@ $(document).ready(function () {
 })
     console.log("FLY_MC的优化引擎加载完毕咯！");
 
-//移动端重写
-if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
-if(window.location.href.indexOf("?mobile")<0){ 
-  try{ 
-      if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
-// 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式 
-$('.pattern-center').css('width:50%', 'width:100%');
-	$('#night-mode-cover').css('visibility', 'visible')
-    $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
-    $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-    $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
-    $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
-        } 
-      else if(/iPad/i.test(navigator.userAgent)){ 
-// 判断访问环境是 iPad 则加载以下样式 
-		$('.pattern-center').css('width:50%', 'width:100%');
-        } 
-        else{ 
-// 判断访问环境是 其他移动设备 则加载以下样式 
-          setActiveStyleSheet("style.css"); 
-        } 
-        } 
-        catch(e){} 
-        } 
-        } 
