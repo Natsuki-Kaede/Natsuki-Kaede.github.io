@@ -7,7 +7,7 @@
   <meta name="description" content="夏·祈·楓のBlog | Just Kaede!">
   <meta name="keywords" content="Natsuki Kaede,夏祈楓,FLY_MC,Sakura,Hexo,火绒,火绒规则,云服务,公共服务">
   
-  <title itemprop="name">归档: 2020 | 夏·祈·楓</title>
+  <title itemprop="name">实现GCP用SSH客户端登录 | 夏·祈·楓</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/favicon.ico">
   
@@ -513,251 +513,158 @@
     </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
-<div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/tocbot/4.10.1/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp">
+    </div>
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      实现GCP用SSH客户端登录</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://flymc.cc">
+            <img src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/img/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://flymc.cc">Natsuki Kaede</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-7-27<span class="bull">
+        ·</span>
+      <span id='/2020/07/27/gcp-ssh/' class="leancloud-visitors" data-flag-title="实现GCP用SSH客户端登录"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
     </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:left;">
-  <button id="al_expand_collapse">
-    <style>
-    button#al_expand_collapse {
-        color: white;
-        border-radius: 16px;
-        font-weight: bold;
-        font-size: 15px;
-        background-color: #FF82AB;
-        transition-duration: 0.3s;
-        box-shadow: 0 3px 8px 0 rgba(0,0,0,0.11), 0 3px 8px 0 rgba(0,0,0,0.11);
-        outline: none;
-    }
-    button#al_expand_collapse:hover {
-        transition: all 0.2s linear 0s;
-        background-color: #FE7497; 
-    }
-    </style>
-    <i class="fa fa-bars" aria-hidden="true"></i> 全部展开/收缩
-</button>
-</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2020年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      07月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/07/27/gcp-ssh/">
-                          <span style="color:#0bf;">
-                          27日20:31:30</span>
-                          实现GCP用SSH客户端登录
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/07/19/idc-start/">
-                          <span style="color:#0bf;">
-                          19日20:47:45</span>
-                          本站开始运营IDC业务！
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      05月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/05/31/cloudown/">
-                          <span style="color:#0bf;">
-                          31日12:55:41</span>
-                          夏·祈·楓の云 云存储服务启动！
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/05/19/publicservice/">
-                          <span style="color:#0bf;">
-                          19日00:04:39</span>
-                          本站公共服务开放！
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      04月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/04/12/pic-random/">
-                          <span style="color:#0bf;">
-                          12日18:09:24</span>
-                          随机图片API源码&amp;使用
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/04/10/mikusymphony2018-2019/">
-                          <span style="color:#0bf;">
-                          10日12:02:55</span>
-                          [Hi-Res]Miku Symphony 2018-2019
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      03月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/03/31/bv2av/">
-                          <span style="color:#0bf;">
-                          31日10:13:55</span>
-                          小破站av号BV号转换
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/03/29/Hi-Res-Miku-Ghost/">
-                          <span style="color:#0bf;">
-                          29日15:24:57</span>
-                          [Hi-Res]初音ミク/DECO*27 - Ghost
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/03/28/Sakura/">
-                          <span style="color:#0bf;">
-                          28日11:42:39</span>
-                          Hexo部署|Sakura主题调教
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/03/17/HuorongRules/">
-                          <span style="color:#0bf;">
-                          17日14:16:00</span>
-                          火绒自定义规则下载通道
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/03/17/Welcome/">
-                          <span style="color:#0bf;">
-                          17日14:15:12</span>
-                          欢迎来到我的个人Blog
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>GCP = Google Cloud Platform</p>
+<p>这篇文章提供GCP中Compute Engine实例实现SSH连接的方法</p>
+<hr>
+<p>如图所示，是一台GCE实例，点击SSH，先在浏览器窗口中进行连接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/1.jpg" alt></p>
+<p>在命令行页面输入</p>
+<pre><code>sudo -i
+</code></pre><p>登入root用户</p>
+<p>（可选）这里可以通过键入</p>
+<pre><code>passwd
+</code></pre><p>修改root密码，此处与SSH客户端登录密码一致</p>
+<p>用vi命令修改sshd_config：</p>
+<pre><code>vi /etc/ssh/sshd_config
+</code></pre><p>将</p>
+<pre><code>PermitRootLogin no
+PasswordAuthentication no
+</code></pre><p>中的“no”修改为“yes”</p>
+<blockquote>
+<p>注：</p>
+<p>此处可使用快速替换命令</p>
+<p>按下ESC，再按：进入命令行模式</p>
+<p>输入</p>
+<p>%s/PasswordAuthentication no/PasswordAuthentication yes/</p>
+<p>即可快速替换</p>
+</blockquote>
+<p>修改完毕后，按下ESC，输入</p>
+<pre><code>:wq!
+</code></pre><p>保存并退出</p>
+<p>重启SSH服务：</p>
+<pre><code>systemctl restart sshd
+</code></pre><p>完成</p>
+<p>此时即可使用SSH客户端连接到GCP</p>
+<p>用户名：root</p>
+<p>密码：在passwd设置的密码</p>
+
+		  
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/donate/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/07/19/idc-start/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/post/idc-start/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/post/idc-start/cover.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                本站开始运营IDC业务！</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "X8bT3LsaLDxRgBOjl7cbu1Yg-gzGzoHsz",
+        appKey: "nLEWfktLcOEjcwrMdmyuNE9Q",
+		visitor: "true",
+        verify: "true",
+        path: window.location.pathname,
+        placeholder: "你是理所当然的奇迹，你是月色真美..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://flymc.cc" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/img/avatar.png" itemprop="image" alt="Natsuki Kaede" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://flymc.cc" itemprop="url" rel="author">Natsuki Kaede</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>Just Kaede!</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
 
     </div>    
     <div class="ins-search">
