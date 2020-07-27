@@ -7,7 +7,7 @@
   <meta name="description" content="夏·祈·楓のBlog | Just Kaede!">
   <meta name="keywords" content="Natsuki Kaede,夏祈楓,FLY_MC,Sakura,Hexo,火绒,火绒规则,云服务,公共服务">
   
-  <title itemprop="name">实现GCP用SSH客户端登录 | 夏·祈·楓</title>
+  <title itemprop="name">Chester Bennington逝世三周年纪念 | 夏·祈·楓</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/favicon.ico">
   
@@ -519,11 +519,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="http://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp">
     </div>
     <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
       <h1 class="entry-title">
-      实现GCP用SSH客户端登录</h1>
+      Chester Bennington逝世三周年纪念</h1>
       <p class="entry-census">
         <span>
           <a href="https://flymc.cc">
@@ -535,9 +535,9 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-7-27<span class="bull">
+        2020-7-20<span class="bull">
         ·</span>
-      <span id='/2020/07/27/gcp-ssh/' class="leancloud-visitors" data-flag-title="实现GCP用SSH客户端登录"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
+      <span id='/2020/07/20/lp-chester/' class="leancloud-visitors" data-flag-title="Chester Bennington逝世三周年纪念"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
     </header>
   </div>
 
@@ -549,40 +549,9 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>GCP = Google Cloud Platform</p>
-<p>这篇文章提供GCP中Compute Engine实例实现SSH连接的方法</p>
-<hr>
-<p>如图所示，是一台GCE实例，点击SSH，先在浏览器窗口中进行连接</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/1.jpg" alt></p>
-<p>在命令行页面输入</p>
-<pre><code>sudo -i
-</code></pre><p>登入root用户</p>
-<p>（可选）这里可以通过键入</p>
-<pre><code>passwd
-</code></pre><p>修改root密码，此处与SSH客户端登录密码一致</p>
-<p>用vi命令修改sshd_config：</p>
-<pre><code>vi /etc/ssh/sshd_config
-</code></pre><p>将</p>
-<pre><code>PermitRootLogin no
-PasswordAuthentication no
-</code></pre><p>中的“no”修改为“yes”</p>
-<blockquote>
-<p>注：</p>
-<p>此处可使用快速替换命令</p>
-<p>按下ESC，再按：进入命令行模式</p>
-<p>输入</p>
-<p>%s/PasswordAuthentication no/PasswordAuthentication yes/</p>
-<p>即可快速替换</p>
-</blockquote>
-<p>修改完毕后，按下ESC，输入</p>
-<pre><code>:wq!
-</code></pre><p>保存并退出</p>
-<p>重启SSH服务：</p>
-<pre><code>systemctl restart sshd
-</code></pre><p>完成</p>
-<p>此时即可使用SSH客户端连接到GCP</p>
-<p>用户名：root</p>
-<p>密码：在passwd设置的密码</p>
+          <div><br><iframe src="//player.bilibili.com/player.html?aid=58491643&bvid=BV1rx411Z7qM&cid=102014951&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><br></div>
+
+<p>#MAKE CHESTER PROUD 时隔三年</p>
 
 		  
         </div>
@@ -612,19 +581,36 @@ PasswordAuthentication no
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2020/07/27/gcp-ssh/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/gcp-ssh/cover.webp">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                实现GCP用SSH客户端登录</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
         
           
-            <div class="post-nepre full next">
+            <div class="post-nepre half next">
           
-            <a href="/2020/07/20/lp-chester/" rel="next">
+            <a href="/2020/07/19/idc-start/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="http://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/post/idc-start/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/post/idc-start/cover.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                Chester Bennington逝世三周年纪念</h3>
+                本站开始运营IDC业务！</h3>
                 <hr>
               </div>
             </a>
