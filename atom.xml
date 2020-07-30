@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-07-30T13:33:30.131Z</updated>
+  <updated>2020-07-30T13:51:34.798Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -21,13 +21,15 @@
     <link href="https://flymc.cc/2020/07/30/fly-engine/"/>
     <id>https://flymc.cc/2020/07/30/fly-engine/</id>
     <published>2020-07-30T12:59:56.000Z</published>
-    <updated>2020-07-30T13:33:30.131Z</updated>
+    <updated>2020-07-30T13:51:34.798Z</updated>
     
     <summary type="html">
     
       预取加速脚本
     
     </summary>
+    
+      <category term="代码" scheme="https://flymc.cc/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
   </entry>
@@ -121,7 +123,7 @@
     <link href="https://flymc.cc/2020/04/12/pic-random/"/>
     <id>https://flymc.cc/2020/04/12/pic-random/</id>
     <published>2020-04-12T10:09:24.000Z</published>
-    <updated>2020-06-13T15:52:22.474Z</updated>
+    <updated>2020-07-30T14:00:31.780Z</updated>
     
     <summary type="html">
     
@@ -129,7 +131,7 @@
     
     </summary>
     
-      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="代码" scheme="https://flymc.cc/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
       <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
