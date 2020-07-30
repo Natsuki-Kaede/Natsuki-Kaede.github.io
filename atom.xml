@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-07-27T13:30:19.626Z</updated>
+  <updated>2020-07-30T13:33:30.131Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fly-Engine网页加速脚本</title>
+    <link href="https://flymc.cc/2020/07/30/fly-engine/"/>
+    <id>https://flymc.cc/2020/07/30/fly-engine/</id>
+    <published>2020-07-30T12:59:56.000Z</published>
+    <updated>2020-07-30T13:33:30.131Z</updated>
+    
+    <summary type="html">
+    
+      预取加速脚本
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>实现GCP用SSH客户端登录</title>
