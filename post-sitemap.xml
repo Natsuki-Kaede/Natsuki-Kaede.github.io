@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
+        <lastmod>2020-08-01T11:38:37.090Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/fly-dns/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
         <lastmod>2020-07-30T14:00:31.780Z</lastmod>
         <changefreq>weekly</changefreq>
