@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
+        <lastmod>2020-08-07T14:23:10.644Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources/post/huorongrules/huorongrules.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
         <lastmod>2020-08-03T15:00:27.828Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -100,20 +114,6 @@
         <image:image>
 
             <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/cloudown/cloudown.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
-        <lastmod>2020-06-26T15:07:55.285Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources/post/huorongrules/huorongrules.jpg</image:loc>
 
         </image:image>
 
