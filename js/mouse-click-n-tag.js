@@ -152,18 +152,3 @@ class CursorSpecialEffects {
 
 const cursorSpecialEffects = new CursorSpecialEffects()
 cursorSpecialEffects.init()
-
- var OriginTitle = document.title;
- var titleTime;
- document.addEventListener('visibilitychange', function () {
-     if (document.hidden) {
-         document.title = 'Just Kaede! - ' + OriginTitle;;
-         clearTimeout(titleTime);
-     }
-     else {
-         document.title = '大好きだよ! - ' + OriginTitle;
-         titleTime = setTimeout(function () {
-             document.title = OriginTitle;
-         }, 1000);
-     }
- });

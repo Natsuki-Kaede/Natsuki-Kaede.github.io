@@ -53,6 +53,22 @@
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
   </script>
+  <script>
+   var OriginTitle = document.title;
+ var titleTime;
+ document.addEventListener('visibilitychange', function () {
+     if (document.hidden) {
+         document.title = 'Just Kaede! - ' + OriginTitle;;
+         clearTimeout(titleTime);
+     }
+     else {
+         document.title = '大好きだよ! - ' + OriginTitle;
+         titleTime = setTimeout(function () {
+             document.title = OriginTitle;
+         }, 1000);
+     }
+ });
+  </script>
   <script type="text/javascript">
   var bg = "https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(0).webp,https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(2).webp,https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(5).webp,https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(8).webp,https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(9).webp,https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/cover/cover(11).webp".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
