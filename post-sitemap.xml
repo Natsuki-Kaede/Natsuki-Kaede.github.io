@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/20/nginx-chereveto-config/</loc>
+        <lastmod>2020-08-20T06:01:51.610Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/nginx-chereveto-config/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
         <lastmod>2020-08-18T14:06:22.890Z</lastmod>
         <changefreq>weekly</changefreq>

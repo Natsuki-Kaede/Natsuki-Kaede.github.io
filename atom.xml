@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-08-18T14:06:22.890Z</updated>
+  <updated>2020-08-20T06:01:51.610Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx安装Cherevoto无法使用的解决方案</title>
+    <link href="https://flymc.cc/2020/08/20/nginx-chereveto-config/"/>
+    <id>https://flymc.cc/2020/08/20/nginx-chereveto-config/</id>
+    <published>2020-08-20T05:54:01.000Z</published>
+    <updated>2020-08-20T06:01:51.610Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;我在迁移Chereveto并开始使用nginx-tengine时，出现了无法访问的情况（错误代码404）&lt;/p&gt;
+&lt;p&gt;这篇文章可以解决nginx使用Chereveto出现的404问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在网站配置文件最后一
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>私有DNS服务 | Fly-DNS</title>
