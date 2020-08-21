@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/21/ngnix-optimize/</loc>
+        <lastmod>2020-08-21T15:41:13.902Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/20/aliyundun/</loc>
         <lastmod>2020-08-20T13:57:14.030Z</lastmod>
         <changefreq>weekly</changefreq>

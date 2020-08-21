@@ -7,7 +7,7 @@
   <meta name="description" content="夏·祈·楓のBlog | Just Kaede!">
   <meta name="keywords" content="Natsuki Kaede,夏祈楓,FLY_MC,Sakura,Hexo,火绒,火绒规则,云服务,公共服务">
   
-  <title itemprop="name">标签: 教程 | 夏·祈·楓</title>
+  <title itemprop="name">Nginx综合调优纪录 | 夏·祈·楓</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/favicon.ico">
   
@@ -508,196 +508,181 @@
     </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/tocbot/4.10.1/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/tags/Skills.webp" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp">
+    </div>
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      Nginx综合调优纪录</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://flymc.cc">
+            <img src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/img/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://flymc.cc">Natsuki Kaede</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-8-21<span class="bull">
+        ·</span>
+      <span id='/2020/08/21/ngnix-optimize/' class="leancloud-visitors" data-flag-title="Nginx综合调优纪录"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">教程</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <blockquote>
+<p>在Apache,nignx,LiteSpeed,kangle等众多主流web服务器试用了一圈后，我回到了Nginx-Tengine的怀抱，并开始进行优化和修改</p>
+<p>搜索了诸多介绍和教程后，进行了一些整理和记录</p>
+</blockquote>
+<blockquote>
+<p>目前使用的服务器配置Xeon E5-2650 v2 @ 2.60GHz，8GiB内存，128GB SSD</p>
+<p>系统为CentOS 7.6 64位</p>
+<p>所有的性能调优将基于这个配置修改，当然我也会提供其他配置的修改方案，仅供参考。</p>
+</blockquote>
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>版本选用：推荐Nginx-Tengine，或当前Nginx发布的最新版本</p>
+<p>vim命令打开nginx的配置文件nginx.conf进行修改 （路径可能不同，但一般都在/etc/nginx）</p>
+<p>宝塔面板可以直接修改</p>
+<h1 id="性能调优"><a href="#性能调优" class="headerlink" title="性能调优"></a>性能调优</h1><h2 id="1-设置Nginx进程数"><a href="#1-设置Nginx进程数" class="headerlink" title="1.设置Nginx进程数"></a>1.设置Nginx进程数</h2><p>由你的CPU数量决定，一般与你的CPU核心数相同。</p>
+<p>比如我的8核心调整为</p>
+<pre><code class="nginx">worker_processes 8;
+</code></pre>
+<h2 id="2-为进程分配CPU"><a href="#2-为进程分配CPU" class="headerlink" title="2.为进程分配CPU"></a>2.为进程分配CPU</h2><p>为每个进程分配CPU</p>
+<p>8核心方案：</p>
+<pre><code class="nginx">worker_cpu_affinity 00000001 00000010 00000100 00001000 00010000 00100000 01000000 10000000;
+</code></pre>
+<p>上面的配置表示：8核CPU，开启8个进程。</p>
+<p>00000001表示开启第一个cpu内核，00000010表示开启第二个cpu内核……</p>
+<p>有多少核心数，就有几位数，1表示该内核开启，0表示该内核关闭。</p>
+<p>以此类推，</p>
+<p>6核心方案</p>
+<pre><code class="nginx">worker_cpu_affinity 000001 000010 000100 001000 010000 100000;
+</code></pre>
+<p>4核心方案</p>
+<pre><code class="nginx">worker_cpu_affinity 0001 0010 0100 1000;
+</code></pre>
+<h2 id="3-配置Nginx进程最多打开的文件数"><a href="#3-配置Nginx进程最多打开的文件数" class="headerlink" title="3.配置Nginx进程最多打开的文件数"></a>3.配置Nginx进程最多打开的文件数</h2><p>最好与ulimit -n的值保持一致</p>
+<pre><code class="nginx">worker_rlimit_nofile 65535;
+</code></pre>
+<h2 id="4-配置最大连接数"><a href="#4-配置最大连接数" class="headerlink" title="4.配置最大连接数"></a>4.配置最大连接数</h2><p>理论上每台nginx服务器的最大连接数为worker_processes*worker_connections</p>
+<p>实际最大连接数请以服务器测压结果为准</p>
+<pre><code class="nginx">worker_connections 65535;
+</code></pre>
+<h2 id="5-连接超时时间"><a href="#5-连接超时时间" class="headerlink" title="5.连接超时时间"></a>5.连接超时时间</h2><p>这个默认值一般为60s</p>
+<pre><code class="nginx">keepalive_timeout 60;
+</code></pre>
+<p>不建议该参数数值过大，过长的连接时间会导致无效HTTP连接占据连接数，浪费系统资源</p>
+<p>当服务器压力过大时，此值可适当减少</p>
+<h2 id="6-客户端请求头部的缓冲区大小"><a href="#6-客户端请求头部的缓冲区大小" class="headerlink" title="6.客户端请求头部的缓冲区大小"></a>6.客户端请求头部的缓冲区大小</h2><p>此数值取决于你的系统分页文件大小</p>
+<p>在终端运行</p>
+<pre><code>getconf PAGESIZE
+</code></pre><p>得到分页文件大小。</p>
+<p>通常这个数值为4096，也就是4k</p>
+<p>所以将配置文件修改为</p>
+<pre><code class="nginx">client_header_buffer_size 4k;
+</code></pre>
+<h1 id="安全调优"><a href="#安全调优" class="headerlink" title="安全调优"></a>安全调优</h1><h2 id="1-隐藏响应头中的有关操作系统和web-server（Nginx）版本号的信息"><a href="#1-隐藏响应头中的有关操作系统和web-server（Nginx）版本号的信息" class="headerlink" title="1.隐藏响应头中的有关操作系统和web server（Nginx）版本号的信息"></a>1.隐藏响应头中的有关操作系统和web server（Nginx）版本号的信息</h2><pre><code class="nginx">server_tokens off;
+</code></pre>
+<h2 id="尚未完成"><a href="#尚未完成" class="headerlink" title="(尚未完成)"></a>(尚未完成)</h2>
+		  
+<hr>
+<center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
+<p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/08/20/aliyundun/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/aliyundun/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/aliyundun/cover.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                完全卸载阿里云/腾讯云服务器监控</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/08/21/ngnix-optimize/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/08/21/ngnix-optimize/">
-    Nginx综合调优纪录</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-8-21</div>
-    <p>
-    优化性能并提高安全性（还在写，尚未完成）</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/08/21/ngnix-optimize/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/08/20/aliyundun/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/aliyundun/cover.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/08/20/aliyundun/">
-    完全卸载阿里云/腾讯云服务器监控</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-8-20</div>
-    <p>
-    </p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/08/20/aliyundun/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/08/20/nginx-chereveto-config/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/nginx-chereveto-config/cover.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/08/20/nginx-chereveto-config/">
-    Nginx安装Cherevoto无法使用的解决方案</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-8-20</div>
-    <p>
-    </p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/08/20/nginx-chereveto-config/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/04/12/pic-random/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/pic-random/pic-random2.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/04/12/pic-random/">
-    随机图片API源码&amp;使用</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-4-12</div>
-    <p>
-    你也能做个随机图片接口~</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/04/12/pic-random/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/03/28/Sakura/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/pic-blog/turbo/9.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/03/28/Sakura/">
-    Hexo部署|Sakura主题调教</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-3-28</div>
-    <p>
-    一萌新写的新手教程...</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/03/28/Sakura/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "X8bT3LsaLDxRgBOjl7cbu1Yg-gzGzoHsz",
+        appKey: "nLEWfktLcOEjcwrMdmyuNE9Q",
+		visitor: "true",
+        verify: "true",
+        path: window.location.pathname,
+        placeholder: "你是理所当然的奇迹，你是月色真美..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://flymc.cc" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources@master/img/avatar.png" itemprop="image" alt="Natsuki Kaede" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://flymc.cc" itemprop="url" rel="author">Natsuki Kaede</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>Just Kaede!</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

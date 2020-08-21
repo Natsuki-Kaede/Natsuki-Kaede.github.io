@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-08-20T13:57:14.030Z</updated>
+  <updated>2020-08-21T15:41:13.902Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx综合调优纪录</title>
+    <link href="https://flymc.cc/2020/08/21/ngnix-optimize/"/>
+    <id>https://flymc.cc/2020/08/21/ngnix-optimize/</id>
+    <published>2020-08-21T12:11:32.000Z</published>
+    <updated>2020-08-21T15:41:13.902Z</updated>
+    
+    <summary type="html">
+    
+      优化性能并提高安全性（还在写，尚未完成）
+    
+    </summary>
+    
+      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>完全卸载阿里云/腾讯云服务器监控</title>
