@@ -1278,7 +1278,7 @@ var home = location.href,
           appId: mashiro_option.v_appId,
           appKey: mashiro_option.v_appKey,
 		  visitor: mashiro_option.v_visitor,
-		  verify: mashiro_option.v_verify,
+		  enableQQ: mashiro_option.v_enableQQ,
           path: window.location.pathname,
           placeholder: '你是理所当然的奇迹，你是月色真美...'
         })
