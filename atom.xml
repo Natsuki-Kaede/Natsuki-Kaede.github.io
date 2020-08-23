@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-08-21T15:41:13.902Z</updated>
+  <updated>2020-08-23T14:49:40.882Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tcpaS单边拥塞算法加速</title>
+    <link href="https://flymc.cc/2020/08/23/tcpaS/"/>
+    <id>https://flymc.cc/2020/08/23/tcpaS/</id>
+    <published>2020-08-23T14:36:37.000Z</published>
+    <updated>2020-08-23T14:49:40.882Z</updated>
+    
+    <summary type="html">
+    
+      加速服务器，改进自腾讯TCPA
+    
+    </summary>
+    
+      <category term="代码" scheme="https://flymc.cc/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx综合调优纪录</title>

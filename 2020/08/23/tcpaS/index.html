@@ -7,7 +7,7 @@
   <meta name="description" content="夏·祈·楓のBlog | Just Kaede!">
   <meta name="keywords" content="夏祈楓,FLY_MC,Sakura,Hexo,火绒规则">
   
-  <title itemprop="name">Nginx综合调优纪录 | 夏·祈·楓</title>
+  <title itemprop="name">tcpaS单边拥塞算法加速 | 夏·祈·楓</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/favicon.ico">
   
@@ -511,11 +511,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/tcpaS/cover.webp);" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/tcpaS/cover.webp">
     </div>
     <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
       <h1 class="entry-title">
-      Nginx综合调优纪录</h1>
+      tcpaS单边拥塞算法加速</h1>
       <p class="entry-census">
         <span>
           <a href="https://flymc.cc">
@@ -527,9 +527,9 @@
         </span>
         <span class="bull">
         ·</span>
-        2020-8-21<span class="bull">
+        2020-8-23<span class="bull">
         ·</span>
-      <span id='/2020/08/21/ngnix-optimize/' class="leancloud-visitors" data-flag-title="Nginx综合调优纪录"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
+      <span id='/2020/08/23/tcpaS/' class="leancloud-visitors" data-flag-title="tcpaS单边拥塞算法加速"><a class="leancloud-visitors-count">加载中···</a><a class="post-meta-item-text"> 次阅读</a></span>
     </header>
   </div>
 
@@ -542,63 +542,41 @@
         
         <div class="entry-content">
           <blockquote>
-<p>在Apache,nignx,LiteSpeed,kangle等众多主流web服务器试用了一圈后，我回到了Nginx-Tengine的怀抱，并开始进行优化和修改</p>
-<p>搜索了诸多介绍和教程后，进行了一些整理和记录</p>
+<p>这是一个腾讯TCPA单边拥塞算法的改进版本，我把它命名为tcpaS</p>
 </blockquote>
 <blockquote>
-<p>目前使用的服务器配置Xeon E5-2650 v2 @ 2.60GHz，8GiB内存，128GB SSD</p>
-<p>系统为CentOS 7.6 64位</p>
-<p>所有的性能调优将基于这个配置修改，当然我也会提供其他配置的修改方案，仅供参考。</p>
+<p>GitHub项目地址及英文文档：<a href="https://github.com/Natsuki-Kaede/tcpaS" rel="noopener external nofollow noreferrer" target="_blank">https://github.com/Natsuki-Kaede/tcpaS</a></p>
 </blockquote>
-<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>版本选用：推荐Nginx-Tengine，或当前Nginx发布的最新版本</p>
-<p>vim命令打开nginx的配置文件nginx.conf进行修改 （路径可能不同，但一般都在/etc/nginx）</p>
-<p>宝塔面板可以直接修改</p>
-<h1 id="性能调优"><a href="#性能调优" class="headerlink" title="性能调优"></a>性能调优</h1><h2 id="1-设置Nginx进程数"><a href="#1-设置Nginx进程数" class="headerlink" title="1.设置Nginx进程数"></a>1.设置Nginx进程数</h2><p>由你的CPU数量决定，一般与你的CPU核心数相同。</p>
-<p>比如我的8核心调整为</p>
-<pre><code class="nginx">worker_processes 8;
-</code></pre>
-<h2 id="2-为进程分配CPU"><a href="#2-为进程分配CPU" class="headerlink" title="2.为进程分配CPU"></a>2.为进程分配CPU</h2><p>为每个进程分配CPU</p>
-<p>8核心方案：</p>
-<pre><code class="nginx">worker_cpu_affinity 00000001 00000010 00000100 00001000 00010000 00100000 01000000 10000000;
-</code></pre>
-<p>上面的配置表示：8核CPU，开启8个进程。</p>
-<p>00000001表示开启第一个cpu内核，00000010表示开启第二个cpu内核……</p>
-<p>有多少核心数，就有几位数，1表示该内核开启，0表示该内核关闭。</p>
-<p>以此类推，</p>
-<p>6核心方案</p>
-<pre><code class="nginx">worker_cpu_affinity 000001 000010 000100 001000 010000 100000;
-</code></pre>
-<p>4核心方案</p>
-<pre><code class="nginx">worker_cpu_affinity 0001 0010 0100 1000;
-</code></pre>
-<h2 id="3-配置Nginx进程最多打开的文件数"><a href="#3-配置Nginx进程最多打开的文件数" class="headerlink" title="3.配置Nginx进程最多打开的文件数"></a>3.配置Nginx进程最多打开的文件数</h2><p>最好与ulimit -n的值保持一致</p>
-<pre><code class="nginx">worker_rlimit_nofile 65535;
-</code></pre>
-<h2 id="4-配置最大连接数"><a href="#4-配置最大连接数" class="headerlink" title="4.配置最大连接数"></a>4.配置最大连接数</h2><p>理论上每台nginx服务器的最大连接数为worker_processes*worker_connections</p>
-<p>实际最大连接数请以服务器测压结果为准</p>
-<pre><code class="nginx">worker_connections 65535;
-</code></pre>
-<h2 id="5-连接超时时间"><a href="#5-连接超时时间" class="headerlink" title="5.连接超时时间"></a>5.连接超时时间</h2><p>这个默认值一般为60s</p>
-<pre><code class="nginx">keepalive_timeout 60;
-</code></pre>
-<p>不建议该参数数值过大，过长的连接时间会导致无效HTTP连接占据连接数，浪费系统资源</p>
-<p>当服务器压力过大时，此值可适当减少</p>
-<h2 id="6-客户端请求头部的缓冲区大小"><a href="#6-客户端请求头部的缓冲区大小" class="headerlink" title="6.客户端请求头部的缓冲区大小"></a>6.客户端请求头部的缓冲区大小</h2><p>此数值取决于你的系统分页文件大小</p>
-<p>在终端运行</p>
-<pre><code>getconf PAGESIZE
-</code></pre><p>得到分页文件大小。</p>
-<p>通常这个数值为4096，也就是4k</p>
-<p>所以将配置文件修改为</p>
-<pre><code class="nginx">client_header_buffer_size 4k;
-</code></pre>
-<h1 id="安全调优"><a href="#安全调优" class="headerlink" title="安全调优"></a>安全调优</h1><h2 id="1-隐藏响应头中的有关操作系统和web-server（Nginx）版本号的信息"><a href="#1-隐藏响应头中的有关操作系统和web-server（Nginx）版本号的信息" class="headerlink" title="1.隐藏响应头中的有关操作系统和web server（Nginx）版本号的信息"></a>1.隐藏响应头中的有关操作系统和web server（Nginx）版本号的信息</h2><pre><code class="nginx">server_tokens off;
-</code></pre>
-<h2 id="尚未完成"><a href="#尚未完成" class="headerlink" title="(尚未完成)"></a>(尚未完成)</h2>
-		  
+<h1 id="tcpaS概述"><a href="#tcpaS概述" class="headerlink" title="tcpaS概述"></a>tcpaS概述</h1><p>tcpaS是一个腾讯TCPA单边拥塞算法的改进版本，拥有更高的性能和更好的安全性，并在原配置基础上增强了稳定性。</p>
+<p>tcpaS同时针对高延时、高丢包率环境进行优化，适用于国内访问的境外VPS</p>
 <hr>
-<center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
-<p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="1-手动安装"><a href="#1-手动安装" class="headerlink" title="1.手动安装"></a>1.手动安装</h2><blockquote>
+<p>手动安装文档请见GitHub项目</p>
+</blockquote>
+<div><br><center><br>GitHub项目地址：<a herf="https://github.com/Natsuki-Kaede/tcpaS"><br>Natsuki-Kaede/tcpaS<br></a><br></center><br></div>
 
+<h2 id="2-一键安装脚本"><a href="#2-一键安装脚本" class="headerlink" title="2.一键安装脚本"></a>2.一键安装脚本</h2><h3 id="安装tcpaS"><a href="#安装tcpaS" class="headerlink" title="安装tcpaS"></a>安装tcpaS</h3><pre><code class="shell"># yum install wget      //如果确认已有wget这一步可省略
+# wget https://dl.flymc.cc/tcpas/tcpas.sh
+# bash tcpas.sh
+</code></pre>
+<p><strong>安装过程会自动重启</strong></p>
+<h3 id="启动tcpaS"><a href="#启动tcpaS" class="headerlink" title="启动tcpaS"></a>启动tcpaS</h3><pre><code class="shell"># cd /usr/local/storage/tcpav2
+# sh start.sh
+</code></pre>
+<h3 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h3><pre><code class="shell"># lsmod|grep tcpa
+</code></pre>
+<p>输出以下内容：</p>
+<pre><code class="shell">tcpa_engine           224249  0
+</code></pre>
+<p>则为安装成功并已在运行</p>
+<hr>
+<h1 id="卸载方式"><a href="#卸载方式" class="headerlink" title="卸载方式"></a>卸载方式</h1><pre><code class="shell"># cd /usr/local/storage/tcpav2
+# bash unistall.sh
+</code></pre>
+<hr>
+<h1 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h1><p>MIT</p>
+
+		  
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -626,36 +604,19 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/08/23/tcpaS/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/tcpaS/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/tcpaS/cover.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                tcpaS单边拥塞算法加速</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2020/08/20/aliyundun/" rel="next">
+            <a href="/2020/08/21/ngnix-optimize/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/aliyundun/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/aliyundun/cover.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/lazyload1.webp" data-src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ngnix-optimize/cover.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                完全卸载阿里云/腾讯云服务器监控</h3>
+                Nginx综合调优纪录</h3>
                 <hr>
               </div>
             </a>
