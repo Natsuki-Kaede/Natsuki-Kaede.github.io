@@ -1281,7 +1281,7 @@ var home = location.href,
 		  enableQQ: mashiro_option.v_enableQQ,
 		  requiredFields: ['nick','mail'],
           path: window.location.pathname,
-          placeholder: '你是理所当然的奇迹，你是月色真美...'
+          placeholder: '你是理所当然的奇迹...'
         })
       }
     },
