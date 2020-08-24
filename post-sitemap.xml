@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/07/20/lp-chester/</loc>
+        <lastmod>2020-08-24T14:37:45.566Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/23/tcpaS/</loc>
         <lastmod>2020-08-24T10:01:27.757Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -114,20 +128,6 @@
         <image:image>
 
             <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/pic-random/pic-random2.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/07/20/lp-chester/</loc>
-        <lastmod>2020-07-27T14:55:25.976Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/lp-chester/cover.webp</image:loc>
 
         </image:image>
 
