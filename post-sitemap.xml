@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/25/ddlc/</loc>
+        <lastmod>2020-08-25T04:03:05.283Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/ddlc/cover1.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/07/20/lp-chester/</loc>
         <lastmod>2020-08-24T14:37:45.566Z</lastmod>
         <changefreq>weekly</changefreq>
