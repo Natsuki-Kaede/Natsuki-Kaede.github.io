@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://flymc.cc/lab/</loc>
+        <lastmod>2020-08-25T12:04:34.738Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://flymc.cc/links/</loc>
         <lastmod>2020-08-24T14:45:59.261Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://flymc.cc/service/</loc>
         <lastmod>2020-05-24T16:54:59.419Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/lab/</loc>
-        <lastmod>2020-04-09T08:26:28.534Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
