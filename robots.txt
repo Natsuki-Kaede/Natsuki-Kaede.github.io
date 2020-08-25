@@ -4,7 +4,6 @@ Disallow: /fonts/
 Disallow: /js/
 Disallow: /css/
 Disallow: /tools/
-Disallow: /2020/08/25/ddlc/
 Sitemap: https://flymc.cc/sitemap.xml
 Sitemap: https://flymc.cc/post-sitemap.xml
 Sitemap: https://flymc.cc/page-sitemap.xml
