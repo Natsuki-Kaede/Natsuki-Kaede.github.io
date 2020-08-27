@@ -8,6 +8,34 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
+        <lastmod>2020-08-27T05:41:41.986Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/pic-random/pic-random2.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/2020/08/27/random-cover-api/</loc>
+        <lastmod>2020-08-27T05:39:50.599Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/random-cover-api/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/23/tcpaS/</loc>
         <lastmod>2020-08-25T12:08:07.280Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,20 +156,6 @@
         <image:image>
 
             <image:loc>https://cdn.jsdelivr.net/gh/Nastsuki-Kaede/Blog-Resources/post/huorongrules/huorongrules.jpg</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
-        <lastmod>2020-07-30T14:00:31.780Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/post/pic-random/pic-random2.webp</image:loc>
 
         </image:image>
 

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
+    <lastmod>2020-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://flymc.cc/2020/08/27/random-cover-api/</loc>
+    <lastmod>2020-08-27</lastmod>
+  </url>
+  <url>
     <loc>https://flymc.cc/2020/08/23/tcpaS/</loc>
     <lastmod>2020-08-25</lastmod>
   </url>
@@ -35,10 +43,6 @@
   <url>
     <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
     <lastmod>2020-08-18</lastmod>
-  </url>
-  <url>
-    <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
-    <lastmod>2020-07-30</lastmod>
   </url>
   <url>
     <loc>https://flymc.cc/2020/07/27/gcp-ssh/</loc>

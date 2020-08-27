@@ -9,7 +9,14 @@
 
     <url>
         <loc>https://flymc.cc/categories/%E4%BB%A3%E7%A0%81/</loc>
-        <lastmod>2020-08-25T12:08:07.280Z</lastmod>
+        <lastmod>2020-08-27T05:41:41.986Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/categories/%E8%B5%84%E6%BA%90/</loc>
+        <lastmod>2020-08-27T05:39:50.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -24,13 +31,6 @@
     <url>
         <loc>https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/</loc>
         <lastmod>2020-08-23T02:56:02.896Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/categories/%E8%B5%84%E6%BA%90/</loc>
-        <lastmod>2020-08-18T06:15:31.964Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
