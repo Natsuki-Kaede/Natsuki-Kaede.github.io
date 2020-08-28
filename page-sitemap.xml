@@ -8,29 +8,64 @@
     </url>
     
     <url>
-        <loc>https://flymc.cc/lab/</loc>
-        <lastmod>2020-08-25T12:04:34.738Z</lastmod>
+        <loc>https://flymc.cc/service/</loc>
+        <lastmod>2020-08-28T12:47:43.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://flymc.cc/music/</loc>
+        <lastmod>2020-08-28T12:47:33.387Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://flymc.cc/links/</loc>
-        <lastmod>2020-08-24T14:45:59.261Z</lastmod>
+        <lastmod>2020-08-28T12:47:14.206Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://flymc.cc/lab/</loc>
+        <lastmod>2020-08-28T12:47:04.813Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://flymc.cc/donate/</loc>
+        <lastmod>2020-08-28T12:46:54.487Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://flymc.cc/comment/</loc>
+        <lastmod>2020-08-28T12:46:38.849Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://flymc.cc/books/</loc>
+        <lastmod>2020-08-28T12:46:24.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://flymc.cc/about-blog/</loc>
-        <lastmod>2020-08-23T15:19:30.874Z</lastmod>
+        <lastmod>2020-08-28T12:45:56.811Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://flymc.cc/about/</loc>
-        <lastmod>2020-06-13T15:52:58.629Z</lastmod>
+        <lastmod>2020-08-28T12:45:47.490Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -38,41 +73,6 @@
     <url>
         <loc>https://flymc.cc/bangumi/</loc>
         <lastmod>2020-05-25T16:03:35.006Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/service/</loc>
-        <lastmod>2020-05-24T16:54:59.419Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/comment/</loc>
-        <lastmod>2020-04-06T03:38:45.849Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/donate/</loc>
-        <lastmod>2020-04-06T03:38:09.889Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/music/</loc>
-        <lastmod>2020-03-20T00:28:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://flymc.cc/books/</loc>
-        <lastmod>2020-03-17T02:22:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
