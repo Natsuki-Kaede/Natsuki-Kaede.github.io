@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
+        <lastmod>2020-08-30T17:30:43.394Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/huorongrules/huorongrules.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/25/ddlc/</loc>
         <lastmod>2020-08-28T13:59:15.509Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -86,20 +100,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/Hi-Res%2520cover/Miku%2520-%2520Ghost.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
-        <lastmod>2020-08-28T12:45:06.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/huorongrules/huorongrules.jpg</image:loc>
 
         </image:image>
 
