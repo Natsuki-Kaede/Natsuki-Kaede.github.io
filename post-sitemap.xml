@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
+        <lastmod>2020-09-13T14:30:54.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-dns/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/08/25/ddlc/</loc>
         <lastmod>2020-08-31T05:33:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -240,20 +254,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/cloudown/cloudown.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
-        <lastmod>2020-08-28T12:39:14.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-dns/cover.webp</image:loc>
 
         </image:image>
 
