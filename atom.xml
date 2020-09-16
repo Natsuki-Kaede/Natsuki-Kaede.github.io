@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2020-08-28T13:43:38.000Z</updated>
+  <updated>2020-09-16T07:21:16.723Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本站开始提供免备案CDN服务！</title>
+    <link href="https://flymc.cc/2020/09/16/free-cdn/"/>
+    <id>https://flymc.cc/2020/09/16/free-cdn/</id>
+    <published>2020-09-16T04:56:12.000Z</published>
+    <updated>2020-09-16T07:21:16.723Z</updated>
+    
+    <summary type="html">
+    
+      免费/付费都有，超高带宽保持稳定~
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>Webp优化随机封面图API开放</title>
@@ -399,28 +419,6 @@
     
     
       <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>欢迎来到我的个人Blog</title>
-    <link href="https://flymc.cc/2020/03/17/Welcome/"/>
-    <id>https://flymc.cc/2020/03/17/Welcome/</id>
-    <published>2020-03-17T06:15:12.000Z</published>
-    <updated>2020-08-28T13:31:38.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://res.flymc.cc/Blog-Resources/post/welcome/welcome.jpg&quot;
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
