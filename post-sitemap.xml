@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/09/27/cnote/</loc>
+        <lastmod>2020-09-28T09:56:03.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/cnote/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/09/16/free-cdn/</loc>
         <lastmod>2020-09-16T07:21:16.723Z</lastmod>
         <changefreq>weekly</changefreq>
