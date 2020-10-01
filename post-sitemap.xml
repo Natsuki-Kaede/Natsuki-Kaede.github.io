@@ -8,28 +8,28 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/10/01/msr7b/</loc>
-        <lastmod>2020-10-01T12:06:38.645Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/msr7b/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
         <loc>https://flymc.cc/2020/09/27/cnote/</loc>
-        <lastmod>2020-10-01T04:01:08.065Z</lastmod>
+        <lastmod>2020-10-01T12:10:44.419Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/cnote/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/2020/10/01/msr7b/</loc>
+        <lastmod>2020-10-01T12:09:33.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/msr7b/cover.webp</image:loc>
 
         </image:image>
 
