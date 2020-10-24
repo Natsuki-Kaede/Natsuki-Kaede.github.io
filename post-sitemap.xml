@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/10/23/free-cdn-1/</loc>
+        <lastmod>2020-10-24T05:15:30.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/free-cdn-1/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/09/27/cnote/</loc>
         <lastmod>2020-10-24T05:11:53.549Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -30,20 +44,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/jeetairplus/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/10/23/free-cdn-1/</loc>
-        <lastmod>2020-10-24T05:08:50.097Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/free-cdn-1/cover.webp</image:loc>
 
         </image:image>
 
