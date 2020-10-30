@@ -8,6 +8,34 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/07/30/fly-engine/</loc>
+        <lastmod>2020-10-30T07:22:57.970Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-engine/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/2020/03/28/Sakura/</loc>
+        <lastmod>2020-10-30T07:22:35.674Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/Sakura/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2020/10/23/free-cdn-1/</loc>
         <lastmod>2020-10-29T15:17:08.374Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,20 +156,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/welcome/welcomecover.jpg</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/03/28/Sakura/</loc>
-        <lastmod>2020-08-28T13:29:58.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/Sakura/cover.webp</image:loc>
 
         </image:image>
 
@@ -310,20 +324,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/cloudown/cloudown.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/07/30/fly-engine/</loc>
-        <lastmod>2020-08-28T12:39:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-engine/cover.webp</image:loc>
 
         </image:image>
 
