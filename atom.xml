@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2021-01-05T17:40:56.755Z</updated>
+  <updated>2021-01-22T09:31:43.237Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Raspberry Piの超级大工程！</title>
+    <link href="https://flymc.cc/2021/01/22/rasp-pi-make/"/>
+    <id>https://flymc.cc/2021/01/22/rasp-pi-make/</id>
+    <published>2021-01-22T08:55:18.000Z</published>
+    <updated>2021-01-22T09:31:43.237Z</updated>
+    
+    <summary type="html">
+    
+      并不是什么大工程。只是用树莓派随便搭着玩的
+    
+    </summary>
+    
+      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>2020の超年终总结！</title>
@@ -388,26 +408,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>随机图片API源码&amp;使用</title>
-    <link href="https://flymc.cc/2020/04/12/pic-random/"/>
-    <id>https://flymc.cc/2020/04/12/pic-random/</id>
-    <published>2020-04-12T10:09:24.000Z</published>
-    <updated>2020-08-28T12:44:12.000Z</updated>
-    
-    <summary type="html">
-    
-      你也能做个随机图片接口~
-    
-    </summary>
-    
-      <category term="代码" scheme="https://flymc.cc/categories/%E4%BB%A3%E7%A0%81/"/>
-    
-    
-      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
