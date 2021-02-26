@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2021-01-22T09:31:43.237Z</updated>
+  <updated>2021-02-26T15:49:56.705Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>夏祈云CDN 全新上线！</title>
+    <link href="https://flymc.cc/2021/02/26/cdn-0/"/>
+    <id>https://flymc.cc/2021/02/26/cdn-0/</id>
+    <published>2021-02-26T14:25:41.000Z</published>
+    <updated>2021-02-26T15:49:56.705Z</updated>
+    
+    <summary type="html">
+    
+      有在非常认真地做CDN！
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Raspberry Piの超级大工程！</title>
@@ -389,22 +405,6 @@
     <summary type="html">
     
       云存储 | 离线下载
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>本站公共服务开放！</title>
-    <link href="https://flymc.cc/2020/05/19/publicservice/"/>
-    <id>https://flymc.cc/2020/05/19/publicservice/</id>
-    <published>2020-05-18T16:04:39.000Z</published>
-    <updated>2020-08-28T12:44:04.000Z</updated>
-    
-    <summary type="html">
-    
-      本站公共服务概述
     
     </summary>
     
