@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2021-05-24T17:11:49.790Z</updated>
+  <updated>2021-06-01T12:46:48.482Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>夏祈云CDN 全新上线！</title>
+    <link href="https://flymc.cc/2021/06/01/cdn-0/"/>
+    <id>https://flymc.cc/2021/06/01/cdn-0/</id>
+    <published>2021-06-01T14:25:41.000Z</published>
+    <updated>2021-06-01T12:46:48.482Z</updated>
+    
+    <summary type="html">
+    
+      有在非常认真地做CDN！
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>夏·祈·楓の公共免费图床</title>
@@ -59,7 +75,7 @@
     <link href="https://flymc.cc/2021/04/29/2021-diary/"/>
     <id>https://flymc.cc/2021/04/29/2021-diary/</id>
     <published>2021-04-29T15:55:26.000Z</published>
-    <updated>2021-05-05T15:19:13.209Z</updated>
+    <updated>2021-05-25T16:51:22.447Z</updated>
     
     <summary type="html">
     
@@ -147,22 +163,6 @@
     </summary>
     
       <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>夏祈云CDN 全新上线！</title>
-    <link href="https://flymc.cc/2021/02/26/cdn-0/"/>
-    <id>https://flymc.cc/2021/02/26/cdn-0/</id>
-    <published>2021-02-26T14:25:41.000Z</published>
-    <updated>2021-02-26T15:49:56.705Z</updated>
-    
-    <summary type="html">
-    
-      有在非常认真地做CDN！
-    
-    </summary>
     
     
   </entry>

@@ -8,6 +8,34 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2021/06/01/cdn-0/</loc>
+        <lastmod>2021-06-01T12:46:48.482Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/cdn-0/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/2021/04/29/2021-diary/</loc>
+        <lastmod>2021-05-25T16:51:22.447Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/2021-diary/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2021/05/25/public-pic/</loc>
         <lastmod>2021-05-24T17:11:49.790Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -30,20 +58,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/gitlab-priv/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2021/04/29/2021-diary/</loc>
-        <lastmod>2021-05-05T15:19:13.209Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/2021-diary/cover.webp</image:loc>
 
         </image:image>
 
@@ -100,20 +114,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/golang-note/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2021/02/26/cdn-0/</loc>
-        <lastmod>2021-02-26T15:49:56.705Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/cdn-0/cover.webp</image:loc>
 
         </image:image>
 
