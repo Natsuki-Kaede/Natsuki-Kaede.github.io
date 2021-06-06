@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
+        <lastmod>2021-06-06T17:42:38.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-dns/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2021/06/01/cdn-0/</loc>
         <lastmod>2021-06-01T12:46:48.482Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -114,20 +128,6 @@
         <image:image>
 
             <image:loc>https://res.flymc.cc/Blog-Resources/post/golang-note/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
-        <lastmod>2021-02-05T13:36:50.610Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/fly-dns/cover.webp</image:loc>
 
         </image:image>
 
