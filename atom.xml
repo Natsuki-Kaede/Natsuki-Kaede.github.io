@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flymc.cc/"/>
-  <updated>2021-06-01T12:46:48.482Z</updated>
+  <updated>2021-08-11T09:21:18.551Z</updated>
   <id>https://flymc.cc/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>站点近况与服务调整说明</title>
+    <link href="https://flymc.cc/2021/08/11/site-trim/"/>
+    <id>https://flymc.cc/2021/08/11/site-trim/</id>
+    <published>2021-08-10T20:24:27.000Z</published>
+    <updated>2021-08-11T09:21:18.551Z</updated>
+    
+    <summary type="html">
+    
+      好久不见
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>夏祈云CDN 全新上线！</title>
@@ -369,35 +387,6 @@
     <summary type="html">
     
       优化性能并提高安全性（还在写，尚未完成）
-    
-    </summary>
-    
-      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>完全卸载阿里云/腾讯云服务器监控</title>
-    <link href="https://flymc.cc/2020/08/20/aliyundun/"/>
-    <id>https://flymc.cc/2020/08/20/aliyundun/</id>
-    <published>2020-08-20T13:41:54.000Z</published>
-    <updated>2020-08-28T12:45:20.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;阿里云服务器自带云盾，腾讯云服务器自带腾讯云镜（可选安装），这些安全服务不断检测服务器状态和安全，但免费服务通常用处不大，且时刻消耗一定服务器资源。本教程可彻底卸载这些安全服务&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;阿里云&quot;&gt;&lt;a
-        
-      
     
     </summary>
     
