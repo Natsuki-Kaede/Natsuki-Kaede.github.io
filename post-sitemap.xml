@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://flymc.cc/2021/08/23/cdn-of-gh/</loc>
+        <lastmod>2021-08-22T17:58:06.157Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/cdn-of-gh/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://flymc.cc/2021/08/11/site-trim/</loc>
         <lastmod>2021-08-11T09:21:18.551Z</lastmod>
         <changefreq>weekly</changefreq>
