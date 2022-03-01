@@ -8,8 +8,22 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/08/24/2021-first-half/</loc>
-        <lastmod>2021-08-24T08:58:46.617Z</lastmod>
+        <loc>https://flymc.cc/not-me/</loc>
+        <lastmod>2021-09-05T15:17:50.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://res.flymc.cc/Blog-Resources/post/not-me/cover.webp</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://flymc.cc/2021-first-half/</loc>
+        <lastmod>2021-08-24T09:00:44.390Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -22,7 +36,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/08/23/cdn-of-gh/</loc>
+        <loc>https://flymc.cc/cdn-of-gh/</loc>
         <lastmod>2021-08-22T17:58:06.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -36,7 +50,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/08/11/site-trim/</loc>
+        <loc>https://flymc.cc/site-trim/</loc>
         <lastmod>2021-08-11T09:21:18.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -50,7 +64,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/01/fly-dns/</loc>
+        <loc>https://flymc.cc/fly-dns/</loc>
         <lastmod>2021-06-06T17:42:38.649Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +78,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/06/01/cdn-0/</loc>
+        <loc>https://flymc.cc/cdn-0/</loc>
         <lastmod>2021-06-01T12:46:48.482Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -78,7 +92,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/04/29/2021-diary/</loc>
+        <loc>https://flymc.cc/2021-diary/</loc>
         <lastmod>2021-05-25T16:51:22.447Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -92,7 +106,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/05/25/public-pic/</loc>
+        <loc>https://flymc.cc/public-pic/</loc>
         <lastmod>2021-05-24T17:11:49.790Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -106,7 +120,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/05/09/gitlab-priv/</loc>
+        <loc>https://flymc.cc/gitlab-priv/</loc>
         <lastmod>2021-05-14T16:07:25.378Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -120,21 +134,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/03/19/not-me/</loc>
-        <lastmod>2021-04-29T15:31:26.110Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-        <image:image>
-
-            <image:loc>https://res.flymc.cc/Blog-Resources/post/not-me/cover.webp</image:loc>
-
-        </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://flymc.cc/2021/04/23/cover-api/</loc>
+        <loc>https://flymc.cc/cover-api/</loc>
         <lastmod>2021-04-23T11:49:43.921Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -148,7 +148,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/04/23/service-notice-1/</loc>
+        <loc>https://flymc.cc/service-notice-1/</loc>
         <lastmod>2021-04-22T17:32:36.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -162,7 +162,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/04/23/golang-note/</loc>
+        <loc>https://flymc.cc/golang-note/</loc>
         <lastmod>2021-04-22T16:54:12.070Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -176,7 +176,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/01/22/rasp-pi-make/</loc>
+        <loc>https://flymc.cc/rasp-pi-make/</loc>
         <lastmod>2021-01-22T09:31:43.237Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -190,7 +190,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2021/01/03/2020-end/</loc>
+        <loc>https://flymc.cc/2020-end/</loc>
         <lastmod>2021-01-05T17:40:56.755Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -204,7 +204,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/10/31/REVBVEg/</loc>
+        <loc>https://flymc.cc/REVBVEg/</loc>
         <lastmod>2020-10-31T15:15:47.109Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -218,7 +218,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/07/30/fly-engine/</loc>
+        <loc>https://flymc.cc/fly-engine/</loc>
         <lastmod>2020-10-30T07:22:57.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -232,7 +232,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/03/28/Sakura/</loc>
+        <loc>https://flymc.cc/Sakura/</loc>
         <lastmod>2020-10-30T07:22:35.674Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -246,7 +246,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/10/23/free-cdn-1/</loc>
+        <loc>https://flymc.cc/free-cdn-1/</loc>
         <lastmod>2020-10-29T15:17:08.374Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -260,7 +260,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/09/27/cnote/</loc>
+        <loc>https://flymc.cc/cnote/</loc>
         <lastmod>2020-10-24T05:11:53.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -274,7 +274,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/10/23/jeetairplus/</loc>
+        <loc>https://flymc.cc/jeetairplus/</loc>
         <lastmod>2020-10-24T05:11:38.578Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -288,7 +288,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/09/16/free-cdn/</loc>
+        <loc>https://flymc.cc/free-cdn/</loc>
         <lastmod>2020-09-16T07:21:16.723Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -302,7 +302,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/25/ddlc/</loc>
+        <loc>https://flymc.cc/ddlc/</loc>
         <lastmod>2020-08-31T05:33:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -316,7 +316,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/03/17/HuorongRules/</loc>
+        <loc>https://flymc.cc/HuorongRules/</loc>
         <lastmod>2020-08-30T17:30:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -330,7 +330,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/27/random-cover-api/</loc>
+        <loc>https://flymc.cc/random-cover-api/</loc>
         <lastmod>2020-08-28T13:43:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -344,7 +344,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/03/17/Welcome/</loc>
+        <loc>https://flymc.cc/Welcome/</loc>
         <lastmod>2020-08-28T13:31:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -358,7 +358,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/20/aliyundun/</loc>
+        <loc>https://flymc.cc/aliyundun/</loc>
         <lastmod>2020-08-28T12:45:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -372,7 +372,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/03/29/Hi-Res-Miku-Ghost/</loc>
+        <loc>https://flymc.cc/Hi-Res-Miku-Ghost/</loc>
         <lastmod>2020-08-28T12:45:16.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -386,7 +386,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/07/19/idc-start/</loc>
+        <loc>https://flymc.cc/idc-start/</loc>
         <lastmod>2020-08-28T12:44:50.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -400,7 +400,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/07/20/lp-chester/</loc>
+        <loc>https://flymc.cc/lp-chester/</loc>
         <lastmod>2020-08-28T12:44:36.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -414,7 +414,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/04/10/mikusymphony2018-2019/</loc>
+        <loc>https://flymc.cc/mikusymphony2018-2019/</loc>
         <lastmod>2020-08-28T12:44:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -428,7 +428,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/20/nginx-chereveto-config/</loc>
+        <loc>https://flymc.cc/nginx-chereveto-config/</loc>
         <lastmod>2020-08-28T12:44:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -442,7 +442,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/21/ngnix-optimize/</loc>
+        <loc>https://flymc.cc/ngnix-optimize/</loc>
         <lastmod>2020-08-28T12:44:16.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -456,7 +456,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/04/12/pic-random/</loc>
+        <loc>https://flymc.cc/pic-random/</loc>
         <lastmod>2020-08-28T12:44:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -470,7 +470,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/05/19/publicservice/</loc>
+        <loc>https://flymc.cc/publicservice/</loc>
         <lastmod>2020-08-28T12:44:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -484,7 +484,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/08/23/tcpaS/</loc>
+        <loc>https://flymc.cc/tcpaS/</loc>
         <lastmod>2020-08-28T12:43:30.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -498,7 +498,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/03/31/bv2av/</loc>
+        <loc>https://flymc.cc/bv2av/</loc>
         <lastmod>2020-08-28T12:42:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -512,7 +512,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/05/31/cloudown/</loc>
+        <loc>https://flymc.cc/cloudown/</loc>
         <lastmod>2020-08-28T12:42:36.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -526,7 +526,7 @@
     </url>
 
     <url>
-        <loc>https://flymc.cc/2020/07/27/gcp-ssh/</loc>
+        <loc>https://flymc.cc/gcp-ssh/</loc>
         <lastmod>2020-08-28T12:38:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

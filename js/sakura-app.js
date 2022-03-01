@@ -1279,6 +1279,7 @@ var home = location.href,
           appKey: mashiro_option.v_appKey,
 		  visitor: mashiro_option.v_visitor,
 		  enableQQ: mashiro_option.v_enableQQ,
+      recordIP: mashiro_option.v_recordIP,
 		  requiredFields: ['nick','mail'],
           path: window.location.pathname,
           placeholder: '你是理所当然的奇迹...'
