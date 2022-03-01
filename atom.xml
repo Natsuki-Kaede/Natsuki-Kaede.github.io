@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>夏·祈·楓</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://flymc.cc/"/>
+  <updated>2021-08-24T09:00:44.390Z</updated>
+  <id>https://flymc.cc/</id>
+  
+  <author>
+    <name>Natsuki Kaede</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2021上半年の呜呜呜</title>
+    <link href="https://flymc.cc/2021-first-half/"/>
+    <id>https://flymc.cc/2021-first-half/</id>
+    <published>2021-08-24T07:53:11.000Z</published>
+    <updated>2021-08-24T09:00:44.390Z</updated>
+    
+    <summary type="html">
+    
+      今天吃什么啊
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基于GitHub的高速文件分发服务</title>
+    <link href="https://flymc.cc/cdn-of-gh/"/>
+    <id>https://flymc.cc/cdn-of-gh/</id>
+    <published>2021-08-22T17:31:18.000Z</published>
+    <updated>2021-08-22T17:58:06.157Z</updated>
+    
+    <summary type="html">
+    
+      基于GitHub的公共文件分发服务
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>站点近况与服务调整说明</title>
+    <link href="https://flymc.cc/site-trim/"/>
+    <id>https://flymc.cc/site-trim/</id>
+    <published>2021-08-10T20:24:27.000Z</published>
+    <updated>2021-08-11T09:21:18.551Z</updated>
+    
+    <summary type="html">
+    
+      好久不见
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>夏祈云CDN 全新上线！</title>
+    <link href="https://flymc.cc/cdn-0/"/>
+    <id>https://flymc.cc/cdn-0/</id>
+    <published>2021-06-01T14:25:41.000Z</published>
+    <updated>2021-06-01T12:46:48.482Z</updated>
+    
+    <summary type="html">
+    
+      有在非常认真地做CDN！
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>夏·祈·楓の公共免费图床</title>
+    <link href="https://flymc.cc/public-pic/"/>
+    <id>https://flymc.cc/public-pic/</id>
+    <published>2021-05-24T16:58:58.000Z</published>
+    <updated>2021-05-24T17:11:49.790Z</updated>
+    
+    <summary type="html">
+    
+      在尽力地运营这个图床
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>夏·祈·楓站点自有GitLab服务</title>
+    <link href="https://flymc.cc/gitlab-priv/"/>
+    <id>https://flymc.cc/gitlab-priv/</id>
+    <published>2021-05-09T09:55:14.000Z</published>
+    <updated>2021-05-14T16:07:25.378Z</updated>
+    
+    <summary type="html">
+    
+      私用Git嗷，暂时开放注册
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开一个2021的日记坑</title>
+    <link href="https://flymc.cc/2021-diary/"/>
+    <id>https://flymc.cc/2021-diary/</id>
+    <published>2021-04-29T15:55:26.000Z</published>
+    <updated>2021-05-25T16:51:22.447Z</updated>
+    
+    <summary type="html">
+    
+      2021年的日记，争取每天都写~
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>本站随机图片API开放使用</title>
+    <link href="https://flymc.cc/cover-api/"/>
+    <id>https://flymc.cc/cover-api/</id>
+    <published>2021-04-23T11:29:40.000Z</published>
+    <updated>2021-04-23T11:49:43.921Z</updated>
+    
+    <summary type="html">
+    
+      随机图片API开放使用
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Golang超随意的学习笔记</title>
+    <link href="https://flymc.cc/golang-note/"/>
+    <id>https://flymc.cc/golang-note/</id>
+    <published>2021-04-22T16:37:59.000Z</published>
+    <updated>2021-04-22T16:54:12.070Z</updated>
+    
+    <summary type="html">
+    
+      Go语言笔记，我很菜的所以还是别点进来了...
+    
+    </summary>
+    
+      <category term="笔记" scheme="https://flymc.cc/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>站点服务调整公告</title>
+    <link href="https://flymc.cc/service-notice-1/"/>
+    <id>https://flymc.cc/service-notice-1/</id>
+    <published>2021-04-22T16:16:49.000Z</published>
+    <updated>2021-04-22T17:32:36.540Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;本站保留的服务&quot;&gt;&lt;a href=&quot;#本站保留的服务&quot; class=&quot;headerlink&quot; title=&quot;本站保留的服务&quot;&gt;&lt;/a&gt;本站保留的服务&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;夏·祈·楓
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记录一个...在改变的猫猫...和...</title>
+    <link href="https://flymc.cc/not-me/"/>
+    <id>https://flymc.cc/not-me/</id>
+    <published>2021-03-19T14:01:28.000Z</published>
+    <updated>2021-09-05T15:17:50.328Z</updated>
+    
+    <summary type="html">
+    
+      猫猫也是会变的
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry Piの超级大工程！</title>
+    <link href="https://flymc.cc/rasp-pi-make/"/>
+    <id>https://flymc.cc/rasp-pi-make/</id>
+    <published>2021-01-22T08:55:18.000Z</published>
+    <updated>2021-01-22T09:31:43.237Z</updated>
+    
+    <summary type="html">
+    
+      并不是什么大工程。只是用树莓派随便搭着玩的
+    
+    </summary>
+    
+      <category term="技术" scheme="https://flymc.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020の超年终总结！</title>
+    <link href="https://flymc.cc/2020-end/"/>
+    <id>https://flymc.cc/2020-end/</id>
+    <published>2021-01-02T16:39:58.000Z</published>
+    <updated>2021-01-05T17:40:56.755Z</updated>
+    
+    <summary type="html">
+    
+      可可爱爱，没有脑袋！
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>U2FsdGVkX180hwSnmqq72nIxhs37lHl5tkdiTs8otmc=</title>
+    <link href="https://flymc.cc/REVBVEg/"/>
+    <id>https://flymc.cc/REVBVEg/</id>
+    <published>2020-10-31T14:48:22.000Z</published>
+    <updated>2020-10-31T15:15:47.109Z</updated>
+    
+    <summary type="html">
+    
+      5ZOq6YeM5pyJS2V55ZGiPw==
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>夏祈云CDN开放公告及策略调整</title>
+    <link href="https://flymc.cc/free-cdn-1/"/>
+    <id>https://flymc.cc/free-cdn-1/</id>
+    <published>2020-10-23T11:22:20.000Z</published>
+    <updated>2020-10-29T15:17:08.374Z</updated>
+    
+    <summary type="html">
+    
+      夏祈云CDN正式开始运营并不断优化~
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Jeet Air Plus真无线耳机测评</title>
+    <link href="https://flymc.cc/jeetairplus/"/>
+    <id>https://flymc.cc/jeetairplus/</id>
+    <published>2020-10-23T11:09:14.000Z</published>
+    <updated>2020-10-24T05:11:38.578Z</updated>
+    
+    <summary type="html">
+    
+      图片为什么配了个有线的（雾）
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言程序设计教程</title>
+    <link href="https://flymc.cc/cnote/"/>
+    <id>https://flymc.cc/cnote/</id>
+    <published>2020-09-27T15:40:44.000Z</published>
+    <updated>2020-10-24T05:11:53.549Z</updated>
+    
+    <summary type="html">
+    
+      这大概是有史以来最大的水文（雾）
+    
+    </summary>
+    
+      <category term="笔记" scheme="https://flymc.cc/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="教程" scheme="https://flymc.cc/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本站开始提供免备案CDN服务！</title>
+    <link href="https://flymc.cc/free-cdn/"/>
+    <id>https://flymc.cc/free-cdn/</id>
+    <published>2020-09-16T04:56:12.000Z</published>
+    <updated>2020-09-16T07:21:16.723Z</updated>
+    
+    <summary type="html">
+    
+      免费/付费都有，超高带宽保持稳定~
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webp优化随机封面图API开放</title>
+    <link href="https://flymc.cc/random-cover-api/"/>
+    <id>https://flymc.cc/random-cover-api/</id>
+    <published>2020-08-27T05:08:12.000Z</published>
+    <updated>2020-08-28T13:43:38.000Z</updated>
+    
+    <summary type="html">
+    
+      国内节点直连，速度起飞的图片API~
+    
+    </summary>
+    
+      <category term="资源" scheme="https://flymc.cc/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Doki Doki Literature Club!の&gt;&gt;&gt;杂谈与解析</title>
+    <link href="https://flymc.cc/ddlc/"/>
+    <id>https://flymc.cc/ddlc/</id>
+    <published>2020-08-25T03:38:27.000Z</published>
+    <updated>2020-08-31T05:33:46.000Z</updated>
+    
+    <summary type="html">
+    
+      Just Monika!
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://flymc.cc/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="分享" scheme="https://flymc.cc/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+</feed>
