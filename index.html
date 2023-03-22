@@ -1,35 +1,43 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>维护公告喵</title>
-    <style>
-        .container {
-            width: 60%;
-            margin: 10% auto 0;
-            background-color: #f0f0f0;
-            padding: 2% 5%;
-            border-radius: 10px
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-            ul li {
-                line-height: 2.3
-            }
-
-        a {
-            color: #20a53a
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>pari.cafe路由升级！</h1>
-        <h3>预计维护时间19:30 - 21:30 </h3>
-        <h3>会尽快和大家见面的~</h3>
-    </div>
-</body>
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta http-equiv="refresh" content="12">
+		<meta name="viewport" content="width=device-width" />
+		<title>出现意外！维护中ovo</title>
+		<link href="./style.css?202207202308" rel="stylesheet"></link>
+		<script src="./loadingAnime.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="div-cf-container" style="display:none">
+				<div class="loading-anime" id="div-loading-anime"></div>
+				<div class="messages">
+					<h1>路由网关Boom！</h1>
+					<hr />
+					<p>Pari ♥ Cafe路由网关出现问题，正在尝试恢复中</p>
+					<p>不用担心！这是网站的意外错误，不是你的网络问题</p>
+					<p>当然，我会尽快修复的！</p>
+					<hr />
+					<p id="cf-spinner-allow-5-secs">正在修复中，请再等一下下哦</p>
+					<p id="cf-spinner-redirecting" style="display:none">检测通过！正在前往目标站点...</p>
+				</div>
+			</div>
+			<div style="display:none;">::IM_UNDER_ATTACK_BOX::</div>
+			<script>
+				(() =>
+				{
+					document.getElementById('div-cf-container').style.display = 'block';
+					CreateLoadingAnime(document.querySelector('#div-loading-anime'));
+				})();
+			</script>
+			<hr />
+			<div class="user-info">
+				Provided by <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a><br />
+			</div>
+		</div>
+	</body>
 </html>
